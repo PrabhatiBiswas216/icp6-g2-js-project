@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>birthdayHall booking</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .birthday-event-container{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.birthday-event-card{
+    width: 370px;
+    margin: 40px 60px;
+    padding: 20px;
+    border: 1px solid grey;
+    box-shadow: 0px 0px 3px 1px;
+
+}
+
+.birthday-event-img{
+    width: 100%;
+    height: 220px;
+}
+.birthday-event-img:hover{
+    transform: translateY(3px);
+}
+.event-title{
+    font-size: 30px;
+    margin-top: 25px;
+    font-weight: bold;
+}
+.event-book-btn{
+    background-image: linear-gradient(to right,aqua  0%,#1183d5 51%,   aqua  100%);
+    margin: 30px auto;
+    padding: 15px 35px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;           
+    box-shadow: 0 0 5px #494747;
+    border-radius: 23px;
+    color: white;
+    display: block;
+    border: #eee;
+}
+.event-book-btn:hover{
+    background-position: right center;
+    background-image: linear-gradient(to right, #fc00ff 0%, #00dbde  51%, #1183d5  100%);
+    color: white;
+    text-decoration: none;
+}
+.event-heading{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+    font-weight: bold;
+}
+.event-price, .event-capacity{
+    font-size: 25px;
+
+}
+.arrow{
+margin-left: 370px;
+margin-top: -50px;
+height: 20px;
+width: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="nav2">            
+        <a class="home n2" href="./index.html"> Home</a>
+        <a class="About n2" href="./pages/about.html"> About Us</a>
+        <a class="Services n2" href="./pages/services.html"> Services</a>          
+        <a class="contact n2" href="./pages/contact.html"> Contact Us</a>
+</div>
+    <div class="birthday-event-container">
+        <div class="birthday-event-card">
+            <img src="/img/HallBooking-imgs/cafeRetro1.jpg" alt=""id="cfnext"  class="birthday-event-img">
+            <img src="/img/HallBooking-imgs/next.png" class="arrow" onclick="cafeRetro()"alt="">
+            <h2 class="event-heading">Birthday Hall</h2>
+            <p class="event-price">Starting price Rs 250/-</p>
+            <p class="event-capacity"> capacity of People : 300 </p>
+            <button class="event-book-btn">Book Now</button>
+        </div>
+        <div class="birthday-event-card">
+            <img src="/img/HallBooking-imgs/santosha1.png" alt=""id="stnext"  class="birthday-event-img">
+            <img src="/img/HallBooking-imgs/next.png" class="arrow" onclick="santosha()"alt="">
+            <h2 class="event-heading">Birthday Hall</h2>
+            <p class="event-price">Starting price Rs 300/-</p>
+            <p class="event-capacity"> capacity of People : 300 </p>
+            <button class="event-book-btn">Book Now</button>
+        </div>
+        <div class="birthday-event-card">
+            <img src="/img/HallBooking-imgs/temp1.png" alt="" id="tmnext" class="birthday-event-img">
+            <img src="/img/HallBooking-imgs/next.png" class="arrow" onclick="temp()"alt="">
+            <h2 class="event-heading">Birthday Hall</h2>
+            <p class="event-price">Starting price Rs 250/-</p>
+            <p class="event-capacity"> capacity of People : 500 </p>
+            <button class="event-book-btn">Book Now</button>
+        </div>
+        <div class="birthday-event-card">
+            <img src="/img/HallBooking-imgs/vc1.png" alt="" id="vcnext" class="birthday-event-img">
+            <img src="/img/HallBooking-imgs/next.png" class="arrow" onclick="vc()"alt="">
+            <h2 class="event-heading">Birthday Hall</h2>
+            <p class="event-price">Starting price Rs 300/-</p>
+            <p class="event-capacity"> capacity of People : 350 </p>
+            <button class="event-book-btn">Book Now</button>
+        </div>
+        <div class="birthday-event-card">
+            <img src="/img/HallBooking-imgs/wt1.png" alt="" id="wtnext" class="birthday-event-img">
+            <img src="/img/HallBooking-imgs/next.png" class="arrow" onclick="wt()"alt="">
+            <h2 class="event-heading">Birthday Hall</h2>
+            <p class="event-price">Starting price Rs 280/-</p>
+            <p class="event-capacity"> capacity of People : 400 </p>
+            <button class="event-book-btn">Book Now</button>
+        </div>
+        <div class="birthday-event-card">
+            <img src="/img/HallBooking-imgs/kg1.png" alt="" id="kgnext" class="birthday-event-img">
+            <img src="/img/HallBooking-imgs/next.png" class="arrow" onclick="kg()"alt="">
+            <h2 class="event-heading">Birthday Hall</h2>
+            <p class="event-price">Starting price Rs 380/-</p>
+            <p class="event-capacity"> capacity of People : 400 </p>
+            <button class="event-book-btn">Book Now</button>
+        </div>
+    </div>
+    
+    <script>
+        var imageSources1 = ["/img/HallBooking-imgs/cafeRetro1.jpg", "/img/HallBooking-imgs/cafeRetro2.jpg", "/img/HallBooking-imgs/cafeRetro3.jpg", "/img/HallBooking-imgs/cafeRetro4.jpg","/img/HallBooking-imgs/cafeRetro5.jpg"];
+        var currentIndex = 0;
+    function cafeRetro() {
+    var imageElement = document.getElementById("cfnext");
+    currentIndex = (currentIndex + 1) % imageSources1.length;
+    imageElement.src = imageSources1[currentIndex];
+}
+var imageSources2 = ["/img/HallBooking-imgs/santosha1.png", "/img/HallBooking-imgs/santosha2.png", "/img/HallBooking-imgs/santosha3.jpg", "/img/HallBooking-imgs/santosha4.png","/img/HallBooking-imgs/santosha5.png"];
+        var currentIndex = 0;
+    function santosha(){
+    var imageElement = document.getElementById("stnext");
+    currentIndex = (currentIndex + 1) % imageSources2.length;
+    imageElement.src = imageSources2[currentIndex];
+}
+var imageSources3 = ["/img/HallBooking-imgs/temp1.png", "/img/HallBooking-imgs/temp2.png", "/img/HallBooking-imgs/temp3.png", "/img/HallBooking-imgs/temp4.png","/img/HallBooking-imgs/temp5.png"];
+        var currentIndex = 0;
+    function temp(){
+    var imageElement = document.getElementById("tmnext");
+    currentIndex = (currentIndex + 1) % imageSources3.length;
+    imageElement.src = imageSources3[currentIndex];
+}
+var imageSources4 = ["/img/HallBooking-imgs/vc1.png", "/img/HallBooking-imgs/vc2.png", "/img/HallBooking-imgs/vc3.png", "/img/HallBooking-imgs/vc4.png","/img/HallBooking-imgs/vc5.png"];
+        var currentIndex = 0;
+    function vc(){
+    var imageElement = document.getElementById("vcnext");
+    currentIndex = (currentIndex + 1) % imageSources4.length;
+    imageElement.src = imageSources4[currentIndex];
+}
+
+var imageSources5 = ["/img/HallBooking-imgs/wt1.png", "/img/HallBooking-imgs/wt2.png", "/img/HallBooking-imgs/wt3.png", "/img/HallBooking-imgs/wt4.jpg","/img/HallBooking-imgs/wt5.png"];
+        var currentIndex = 0;
+    function wt(){
+    var imageElement = document.getElementById("wtnext");
+    currentIndex = (currentIndex + 1) % imageSources5.length;
+    imageElement.src = imageSources5[currentIndex];
+}
+var imageSources6 = ["/img/HallBooking-imgs/kg1.png", "/img/HallBooking-imgs/kg2.png", "/img/HallBooking-imgs/kg3.png", "/img/HallBooking-imgs/kg4.png","/img/HallBooking-imgs/kg5.png"];
+        var currentIndex = 0;
+    function kg(){
+    var imageElement = document.getElementById("kgnext");
+    currentIndex = (currentIndex + 1) % imageSources6.length;
+    imageElement.src = imageSources6[currentIndex];
+}
+    </script>
+    <!-- footer -->
+    <div class="footer">
+        <div class="subscribe">
+            <span>Subscribe to Our Newsletter:</span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email" placeholder="&nbsp;&nbsp;Enter Your E-mail">
+            <button type="button" class="btn" style="display: inline-block;">Subscribe</button>
+        </div>
+        <div class="foot">
+            <div class="histoty foot-d"><h3>Luxurious Haven</h3>
+                <h2>History</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic aliquam culpa facere velit dignissimos quo deleniti, eum quos recusandae perspiciatis beatae quisquam, maxime dolorem nam rerum voluptate? Nesciunt, eveniet sapiente!</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde magni voluptatum ullam hic? Explicabo natus tempore atque qui dignissimos sint.</p>
+            
+            </div>
+            
+            <div class="contact foot-d"><h3>Contact</h3>
+                <p><img src="./img/home-img/location.png" alt="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat repellat eum nostrum odit tempore consequuntur?</p>
+                <p>📞 +919404530151</p>
+                <p>✉️ prabhatibiswas@gmail.com</p>
+              
+            </div>
+
+            <div class="feedback-form foot-d"><h3>feedback Form</h3>
+                
+                    <input type="text" placeholder="Enter Your E-mail">                       
+                    <div class="">
+                        <img src="./img/home-img/star (1).png" alt="">
+                        <img src="./img/home-img/star (1).png" alt="">
+                        <img src="./img/home-img/star (1).png" alt="">
+                        <img src="./img/home-img/star (1).png" alt="">
+                        <img src="./img/home-img/star (1).png" alt="">
+
+                    </div>
+                    <textarea type="text" cols="30" rows="5" placeholder="Write your Openion"></textarea>
+
+                    <button type="button" class="btn" style="padding: 10px 50px;">Submit</button>
+            </div>
+        </div>
+        
+        <div class="copy">
+            <hr>
+            <p>copyright(c) 2023 Copyright Holder </p>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
