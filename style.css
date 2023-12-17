@@ -510,6 +510,13 @@ p{
 .histoty{
     width: 40%;
 }
+.social-media{
+    display: flex;
+}
+.social-media img{
+    width: 30px;
+    margin: 0 10px;
+}
 .contact{
     width: 20%;
 } 
