@@ -24,7 +24,7 @@ body{
     .form-box h1{
         font-size: 30px;
         margin-bottom: 60px;
-        color: #1183d5;
+        color:#1183d5;
         position: relative;
     
     }
@@ -74,7 +74,7 @@ body{
 
     form p a{
         text-decoration: none;
-        color: #1183d5;
+        color:#1183d5;
     }
     
     .btn-field{
@@ -85,7 +85,7 @@ body{
 
     .btn-field button{
         flex-basis: 48%;
-        background-color:#1183d5;
+        background-image: linear-gradient(to right,aqua  0%,#1183d5 51%,   aqua  100%);
         color: black;
         height: 40px;
         border-radius: 20px;
@@ -103,6 +103,8 @@ body{
     .btn-field button.disable{
         background-color: whitesmoke;
         color: black;
+
+
     }
 
     
