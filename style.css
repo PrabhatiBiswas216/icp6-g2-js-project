@@ -254,6 +254,33 @@ p{
     padding: 5px ;
     border-radius: 10px;
 }
+.check-btn{
+    background-image: linear-gradient(to right,aqua  0%,#1183d5 51%,   aqua  100%);
+    margin: 10px;
+    padding: 15px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;           
+    box-shadow: 0 0 5px #494747;
+    border-radius: 23px;
+    color: white;
+    display: block;
+    border: #eee;
+    /* position: relative;
+    top: -30px;
+    left: -620px; */
+    z-index: 5;
+    
+}
+
+.check-btn:hover{
+    background-position: right center;
+    background-image: linear-gradient(to right, #fc00ff 0%, #00dbde  51%, #1183d5  100%);
+    color: white;
+    text-decoration: none;
+}
+
 .part{
     display: inline-block;
 }
