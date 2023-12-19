@@ -2,7 +2,6 @@
 const events = [
     { id: 1, name: 'Marriage', capacity: 500 },
     { id: 2, name: 'Birthday', capacity: 100 },
-    { id: 3, name: 'Seminar', capacity: 100 },
     { id: 3, name: 'Other', capacity: 100 }
 ];
 
