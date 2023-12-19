@@ -1,7 +1,11 @@
+*{
+    box-sizing: border-box;
+}
 body{
     border: 0px;
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 a{
     text-decoration: none;
@@ -109,7 +113,7 @@ p{
 .login-signup-btn{
     background-image: linear-gradient(to right,aqua  0%,#1183d5 51%,   aqua  100%);
     margin: 10px;
-    padding: 15px 35px;
+    padding: 10px 20px;
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
@@ -119,6 +123,9 @@ p{
     color: white;
     display: block;
     border: #eee;
+}
+.login-signup-btn a{
+    font-size: 17px;
 }
 
 .login-signup-btn:hover{
@@ -141,18 +148,21 @@ p{
     align-items: center;   
 }
 .nav2 a{
+    font-size: 20px;
     margin: 0px 20px;
 }
 .nav2 a:hover{
-    width: 90px;
+   box-sizing: border-box;
+    box-sizing: border-box;
+    width: 120px;
     color: whitesmoke;
     background: transparent;
 	backdrop-filter: blur(100px);
-	padding: 5px 20px;
+	padding: 5px 15px;
 	border-radius: 20px;
 	box-shadow: 0px 0px 2px 0px;
     text-align: center;
-    transform: scale(1.1);
+    transform: scale(0.9);
     transition: 0.5s;
     
 }
@@ -212,7 +222,7 @@ p{
     display: block;
     border: #eee;
     position: relative;
-    top: -50px;
+    top: -30px;
     left: -620px;
     z-index: 5;
 }
@@ -234,6 +244,7 @@ p{
     background-color: #f5eee5;
     display: flex;
     justify-content: space-around;
+    flex-direction: row;
     padding: 10px 2px;
     border-radius: 5px;
     
@@ -242,6 +253,36 @@ p{
     width: 120px;
     padding: 5px ;
     border-radius: 10px;
+}
+.check-btn{
+    background-image: linear-gradient(to right,aqua  0%,#1183d5 51%,   aqua  100%);
+    margin: 10px;
+    padding: 15px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;           
+    box-shadow: 0 0 5px #494747;
+    border-radius: 23px;
+    color: white;
+    display: block;
+    border: #eee;
+    /* position: relative;
+    top: -30px;
+    left: -620px; */
+    z-index: 5;
+    
+}
+
+.check-btn:hover{
+    background-position: right center;
+    background-image: linear-gradient(to right, #fc00ff 0%, #00dbde  51%, #1183d5  100%);
+    color: white;
+    text-decoration: none;
+}
+
+.part{
+    display: inline-block;
 }
 
 .service{
@@ -290,8 +331,8 @@ p{
     justify-content: center ;
 }
 .room-card{
-    width: 320px;
-    margin: 20px;
+    width: 340px;
+    margin: 20px 20px;
     padding: 20px;
     border: 1px solid grey;
     box-shadow: 0px 0px 3px 1px;
@@ -302,7 +343,7 @@ p{
 }
 
 
-/* ++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* +++++++++++++++++++++++++ our specialities +++++++++++++++++++++++ */
 
 .box1{
     display: flex;
@@ -325,7 +366,7 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: hsl(202, 12%, 87%);
+    background-color: #dadfe2;
     
 }
 .box:hover{
@@ -473,7 +514,7 @@ p{
     width: 75%;  
     background-color:white;   
     border: 2px solid grey;
-    padding: 5px 10px;
+    padding: 15px 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -488,6 +529,28 @@ p{
     width: 300px;
     height: 35px;
 }
+.subs-btn{
+    background-image: linear-gradient(to right,aqua  0%,#1183d5 51%,   aqua  100%);
+    margin-left: 30px;
+    padding: 15px 35px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;           
+    box-shadow: 0 0 5px #494747;
+    border-radius: 23px;
+    color: white;
+    display: block;
+    border: #eee;
+}
+
+.subs-btn:hover{
+    background-position: right center;
+    background-image: linear-gradient(to right, #fc00ff 0%, #00dbde  51%, #1183d5  100%);
+    color: white;
+    text-decoration: none;
+}
+
 .subscribe span{
     font-size: 20px;
     font-weight: bold;
@@ -579,7 +642,7 @@ p{
     }
     .home-container{
         padding-top: 20px;
-        width: 1200px;
+        width: 1060px;
       }
 
       .nav1{
@@ -587,30 +650,30 @@ p{
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        padding: 10px 0px 16px 10px;
+        padding: 10px 0px 16px 0px;
         margin-top: -25px;
         /* border: 2px solid red; */
         font-size: 18px;
     }
    
     .nav1-1{
-        width: 35%;
+        width: 30%;
         display: flex;
         /* border: 2px solid red; */
         justify-content: space-between;
         align-items: center;
-        margin-left: -25px;
+        margin-left: -10px;
         font-size: 18px;
 }
     
     
     .nav1-2{
-        width: 35%;
+        width: 30%;
         display: flex;
         /* border: 2px solid red; */
         justify-content: space-between;
         align-items: center;
-        margin-right: 45px;
+        /* margin-right: 70px; */
         font-size: 18px;
 }
     
@@ -637,6 +700,132 @@ p{
     width: 130px;
     padding: 10px 20px;
 }
+.login-signup-btn a{
+    font-size: 15px;
+}
+/* ++++++++++++++++++++++ check avaiability +++++++++++++++ */
+
+.form{
+    width: 60%;
+    margin-left: 20%;
+    height: 300px;
+    /* margin-left: 9%; */
+    margin-top: -250px;
+    position: relative;
+    z-index: 5;
+    background-color: #f5eee5;
+    display: flex;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    padding: 10px 2px;
+    border-radius: 5px;
+    
+}
+.form-title{
+    width: 120px;
+    padding: 5px ;
+    border-radius: 10px;
+    /* border: 2px solid red; */
+}
+.book-head{
+    display: block;
+    margin-left: 30%;
+    margin-top: -25px;
+
+}
+
+.part{
+    display: block;
+    width: 450px;
+}
+#part-1{
+    margin-top: -150px;
+}
+ #part-2{
+    margin-top: -50px;
+}
+
+.btn{
+    background-image: linear-gradient(to right,aqua  0%,#1183d5 51%,   aqua  100%);
+    /* margin: 10px; */
+    padding: 12px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;           
+    box-shadow: 0 0 5px #494747;
+    border-radius: 23px;
+    color: white;
+    display: block;
+    border: #eee;
+    margin-top: -50px;
+    /* border: 2px solid red; */
+}
+
+.btn:hover{
+    background-position: right center;
+    background-image: linear-gradient(to right, #fc00ff 0%, #00dbde  51%, #1183d5  100%);
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* +++++++++++++++++++++++++ our specialiest media ++++++++++++++++++++++++ */
+
+.box1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+.special-box{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    /* border: 2px solid red; */
+
+    
+}
+.box{
+    width: 300px;
+    height: 200px;
+    margin: 10px 5px;
+    box-shadow: 0px 0px 1px rgba(15, 15, 15, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #dadfe2;
+    
+}
+.box:hover{
+    background-color: #34a1ef;
+    transition: 0.5s;
+    transform: scale(0.99);
+    box-shadow: 0px 0px 2px black;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid white;
+}
+.box img{
+    float: right;
+    width: 35px;
+}
+
+.img-box{
+    margin: 20px 0px ;
+    width: 80%;
+
+}
+.img-box img{
+    width: 100%;
+}
+
+
 
 }  
 
