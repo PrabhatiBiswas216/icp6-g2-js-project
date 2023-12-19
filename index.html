@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>navbar</title>
+    <title>Home Page</title>
 
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -34,7 +34,7 @@
                 </div>
     
                 <a href="./pages/login.html">
-                    <button class="login-signup-btn">Signup/Login</button>
+                    <button class="login-signup-btn"><a href="./pages/login.html">Signup/Login</a></button>
                 </a>
             </div>
             
@@ -44,8 +44,9 @@
         <div class="nav2">            
                 <a class="home n2" href="./index.html"> Home</a>
                 <a class="About n2" href="./pages/about.html"> About Us</a>
-                <a class="Services n2" href="./pages/services.html"> Services</a>          
-                <a class="contact n2" href="./pages/contact.html"> Contact Us</a>
+                <a class="Services n2" href="./pages/"> Services</a>          
+                <!-- <a class="contact n2" href="./pages/contact.html"> Contact Us</a> -->
+                <a href="./pages/contact.html">Contact</a>
         </div>
 
 
@@ -64,30 +65,36 @@
 
         <div class="form">
             <form action="">
-            <span style="font-size: 22px; font-weight: bold;"><span style="color: #1183d5;">Book</span> Your Room:</span>&nbsp;&nbsp;&nbsp;
-            
-            
-                <span >check in:</span>
+                <div class="part">
+            <span style="font-size: 22px; font-weight: bold;" class="book-head"><span style="color: #1183d5;">Book</span> Your Room:</span>&nbsp;&nbsp;&nbsp;
+                </div>
+
+                <div class="part" id="part-1">
+                <span>check in:</span>
                 <input type="date" class="form-title">&nbsp;&nbsp;&nbsp;
            
 
             
-                <span >check out:</span>
+                <span>check out:</span>
                 <input type="date" class="form-title">&nbsp;&nbsp;&nbsp;
+                </div>
 
-           
+
+                <div class="part" id="part-2">
+                    <span>Booking Type</span>
                 <select name="" id="" class="form-title">
                     <option value="">Booking Type</option>
                     <option value="">Room Book</option>
                     <option value="">Hall Book</option>
                 </select>
 
-                <span >NO. Of Guest:</span>
+                <span>NO. Of Guest:</span>
                 <input type="number" class="form-title">&nbsp;&nbsp;&nbsp;
-            
+                </div>
+
                 <button class="btn" type="button" style="display: inline-block; ">Check Availability</button>
            
-        </form>
+             </form>
         </div>
 
 
@@ -265,7 +272,7 @@
             <div class="subscribe">
                 <span>Subscribe to Our Newsletter:</span>&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="email" placeholder="&nbsp;&nbsp;Enter Your E-mail">
-                <button type="button" class="btn" style="display: inline-block;">Subscribe</button>
+                <button type="button" class="subs-btn" style="display: inline-block;">Subscribe</button>
             </div>
             <div class="foot">
                 <div class="histoty foot-d"><h3>Luxurious Haven</h3>
