@@ -1,3 +1,5 @@
+
+  confirm(" are you sure")
 function submitForm() {
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
@@ -8,7 +10,7 @@ function submitForm() {
   alert(`Booking Confirmed!\nName: ${name}\nEmail: ${email}\nPersons: ${persons}`);
 }
 function toggleFaq(faqId) {
-  var faqAnswer = document.getElementById(faqId);
+  let faqAnswer = document.getElementById(faqId);
   if (faqAnswer.style.display === 'block') {
       faqAnswer.style.display = 'none';
   } else {
