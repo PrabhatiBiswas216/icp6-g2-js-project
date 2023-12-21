@@ -3,11 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Other Events</title>
+    <title>Other events Hall booking</title>
     <link rel="stylesheet" href="/style.css">
+    <style>
+        .other-event-container{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+.other-event-card{
+    width: 370px;
+    margin: 40px 60px;
+    padding: 20px;
+    border: 1px solid grey;
+    box-shadow: 0px 0px 3px 1px;
+
+}
+
+.other-event-img{
+    width: 100%;
+    height: 220px;
+}
+.other-event-img:hover{
+    transform: translateY(3px);
+}
+.event-title{
+    font-size: 30px;
+    margin-top: 25px;
+    font-weight: bold;
+}
+.event-book-btn{
+    background-image: linear-gradient(to right,aqua  0%,#1183d5 51%,   aqua  100%);
+    margin: 30px auto;
+    padding: 15px 35px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;           
+    box-shadow: 0 0 5px #494747;
+    border-radius: 23px;
+    color: white;
+    display: block;
+    border: #eee;
+}
+.event-book-btn:hover{
+    background-position: right center;
+    background-image: linear-gradient(to right, #fc00ff 0%, #00dbde  51%, #1183d5  100%);
+    color: white;
+    text-decoration: none;
+}
+.event-heading{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+    font-weight: bold;
+}
+.event-price, .event-capacity{
+    font-size: 25px;
+
+}
+.arrow{
+margin-left: 330px;
+margin-top: -50px;
+height: 20px;
+width: 20px;
+}
+@media only screen and (max-width: 768px) {
+    .other-event-card {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .arrow {
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+    </style>
 </head>
 <body>
+    <!-- header -->
+    <div class="nav2">            
+        <a class="home n2" href="/index.html"> Home</a>
+        <a class="About n2" href="about.html" target="_blank"> About Us</a>
+        <a class="Services n2" href="review.html" target="_blank">Review</a>          
+        <a href="contact.html" target="_blank">Contact</a>
+</div>
+    <!-- body -->
+    <div class="other-event-container">
+        <div class="other-event-card">
+            <img src="/img/HallBooking-imgs/seminarHall1.png" alt=""id="shnext"  class="other-event-img">
+            <img src="/img/HallBooking-imgs/next.png" class="arrow" onclick="sh()"alt="">
+            <h2 class="event-heading">Seminar Hall</h2>
+            <p class="event-capacity"> capacity of People : 600 </p>
+            <a href="/pages/booking.html"> <button class="event-book-btn">Book Now</button></a>
+        </div>
+        <div class="other-event-card">
+            <img src="/img/HallBooking-imgs/concert1.png" alt=""id="mcnext"  class="other-event-img">
+            <img src="/img/HallBooking-imgs/next.png" class="arrow" onclick="mc()"alt="">
+            <h2 class="event-heading">Music Concert</h2>
+            <p class="event-capacity"> capacity of People : 1000 </p>
+            <a href="/pages/booking.html"> <button class="event-book-btn">Book Now</button></a>
+        </div>
+        <div class="other-event-card">
+            <img src="/img/HallBooking-imgs/babyShower3.png" alt="" id="bsnext" class="other-event-img">
+            <img src="/img/HallBooking-imgs/next.png" class="arrow" onclick="bs()"alt="">
+            <h2 class="event-heading">Baby Shower</h2>
+            <p class="event-capacity"> capacity of People : 800 </p>
+            <a href="/pages/booking.html"> <button class="event-book-btn">Book Now</button></a>
+        </div>
+        <div class="other-event-card">
+            <img src="/img/HallBooking-imgs/christmas party.png" alt="" id="penext" class="other-event-img">
+            <img src="/img/HallBooking-imgs/next.png" class="arrow" onclick="pe()"alt="">
+            <h2 class="event-heading">Parties</h2>
+            <p class="event-capacity"> capacity of People : 750 </p>
+            <a href="/pages/booking.html"> <button class="event-book-btn">Book Now</button></a>
+        </div>
+        
+        <div class="other-event-card">
+            <img src="/img/HallBooking-imgs/yl1.png" alt="" id="aenext" class="other-event-img">
+            <img src="/img/HallBooking-imgs/next.png" class="arrow" onclick="ae()"alt="">
+            <h2 class="event-heading">Anniversary/Engagement</h2>
+            <p class="event-capacity"> capacity of People : 500 </p>
+            <a href="/pages/booking.html"> <button class="event-book-btn">Book Now</button></a>
+        </div>
+    </div>
     
+    <script>
+        var imageSources1 = ["/img/HallBooking-imgs/seminarHall1.png", "/img/HallBooking-imgs/seminarHall2.png", "/img/HallBooking-imgs/seminarHall3.png", "/img/HallBooking-imgs/seminarHall4.png","/img/HallBooking-imgs/seminarHall5.png"];
+        var currentIndex = 0;
+    function sh() {
+    var imageElement = document.getElementById("shnext");
+    currentIndex = (currentIndex + 1) % imageSources1.length;
+    imageElement.src = imageSources1[currentIndex];
+}
+var imageSources2 = ["/img/HallBooking-imgs/concert1.png", "/img/HallBooking-imgs/concert2.png", "/img/HallBooking-imgs/concert3.png", "/img/HallBooking-imgs/concert4.png","/img/HallBooking-imgs/concert5.png"];
+        var currentIndex = 0;
+    function mc(){
+    var imageElement = document.getElementById("mcnext");
+    currentIndex = (currentIndex + 1) % imageSources2.length;
+    imageElement.src = imageSources2[currentIndex];
+}
+var imageSources3 = ["/img/HallBooking-imgs/babyShower1.png", "/img/HallBooking-imgs/babyShower2.png", "/img/HallBooking-imgs/babyShower3.png", "/img/HallBooking-imgs/babyShower4.png","/img/HallBooking-imgs/babyShower5.png"];
+        var currentIndex = 0;
+    function bs(){
+    var imageElement = document.getElementById("bsnext");
+    currentIndex = (currentIndex + 1) % imageSources3.length;
+    imageElement.src = imageSources3[currentIndex];
+}
+var imageSources4 = ["/img/HallBooking-imgs/valentine.png", "/img/HallBooking-imgs/new year party.png", "/img/HallBooking-imgs/corporate party.png", "/img/HallBooking-imgs/conference party.png","/img/HallBooking-imgs/christmas party.png"];
+        var currentIndex = 0;
+    function pe(){
+    var imageElement = document.getElementById("penext");
+    currentIndex = (currentIndex + 1) % imageSources4.length;
+    imageElement.src = imageSources4[currentIndex];
+}
+
+var imageSources5 = ["/img/HallBooking-imgs/yl6.png", "/img/HallBooking-imgs/yl2.png", "/img/HallBooking-imgs/yl3.png", "/img/HallBooking-imgs/yl4.png","/img/HallBooking-imgs/yl5.png"];
+        var currentIndex = 0;
+    function ae(){
+    var imageElement = document.getElementById("aenext");
+    currentIndex = (currentIndex + 1) % imageSources5.length;
+    imageElement.src = imageSources5[currentIndex];
+}
+
+    </script>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="subscribe">
+            <span>Subscribe to Our Newsletter:</span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email" placeholder="&nbsp;&nbsp;Enter Your E-mail">
+            <button type="button" class="subs-btn" style="display: inline-block;">Subscribe</button>
+        </div>
+        <div class="foot">
+            <div class="histoty foot-d"><h3>Luxurious Haven</h3>
+                <h2>History</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic aliquam culpa facere velit dignissimos quo deleniti, eum quos recusandae perspiciatis beatae quisquam, maxime dolorem nam rerum voluptate? Nesciunt, eveniet sapiente!</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde magni voluptatum ullam hic? Explicabo natus tempore atque qui dignissimos sint.</p>
+                <div class="social-media">
+                    <img src="./img/home-img/youtube.png" alt="">
+                    <img src="./img/home-img/instagram.png " alt="">
+                    <img src="./img/home-img/linkedin.png" alt="">
+                    <img src="./img/home-img/meta.png" alt="">
+ 
+                </div>
+            </div>
+            
+            <div class="contact foot-d"><h3>Contact</h3>
+                <p><img src="./img/home-img/location.png" alt="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat repellat eum nostrum odit tempore consequuntur?</p>
+                <p>📞 +919404530151</p>
+                <p>✉️ prabhatibiswas@gmail.com</p>
+              
+            </div>
+
+            <div class="feedback-form foot-d"><h3>feedback Form</h3>                  
+                    <input type="text" placeholder="Enter Your E-mail">                       
+                    <div class="">
+                        <img src="./img/home-img/star (1).png" alt="" class="blank-star" id="1-star" onclick="star1()">
+                        <img src="./img/home-img/star (1).png" alt="" class="blank-star" id="2-star" onclick="star2()">
+                        <img src="./img/home-img/star (1).png" alt="" class="blank-star" id="3-star" onclick="star3()">
+                        <img src="./img/home-img/star (1).png" alt="" class="blank-star" id="4-star" onclick="star4()">
+                        <img src="./img/home-img/star (1).png" alt="" class="blank-star" id="5-star" onclick="star5()">
+                    </div>
+                    <textarea type="text" cols="30" rows="5" placeholder="Write your Openion"></textarea>
+                    <button type="button" class="btn" style="padding: 10px 50px;" id="feedback-submit-btn" onclick="clickBtn()">Submit</button>
+            </div>
+        </div>
+        
+        <div class="copy">
+            <hr>
+            <p>copyright(c) 2023 Copyright Holder </p>
+        </div>
+    </div>
+
+</div>
 </body>
-<script src="/js/hallBook.js"></script>
 </html>

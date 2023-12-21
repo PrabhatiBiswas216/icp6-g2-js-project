@@ -1,16 +1,20 @@
+abc{
+    color: #1183d5;
+    color: #34a1ef;
+   color: #dadfe2;
+}
+
 body{
     padding: 0;
     margin: 0;
     background-color: #fff}
 
     .form-box{
-        width: 90%;
-        max-width: 450px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        background: antiquewhite;
+        /* width: 90%;
+        max-width: 450px; */
+        margin: 50px 30%;
+      width: 40%;
+        background:  #dadfe2;
         padding: 50px 60px 70px;
         text-align: center;
     }
@@ -18,7 +22,7 @@ body{
     .form-box h1{
         font-size: 30px;
         margin-bottom: 60px;
-        color: rosybrown;
+        color:#34a1ef;
         position: relative;
     
     }
@@ -28,7 +32,7 @@ body{
         width: 30px;
         height: 4px;
         border-radius: 3px;
-        background: rosybrown;
+        background:#34a1ef;
         position: absolute;
         bottom: -12px;
         left: 50%;
@@ -68,7 +72,7 @@ body{
 
     form p a{
         text-decoration: none;
-        color: brown;
+        color:#34a1ef;
     }
     
     .btn-field{
@@ -79,7 +83,7 @@ body{
 
     .btn-field button{
         flex-basis: 48%;
-        background-color: rosybrown;
+        background-image: linear-gradient(to right,aqua  0%,#1183d5 51%,   aqua  100%);
         color: black;
         height: 40px;
         border-radius: 20px;
@@ -97,6 +101,8 @@ body{
     .btn-field button.disable{
         background-color: whitesmoke;
         color: black;
+
+
     }
 
     
