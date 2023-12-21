@@ -6,20 +6,24 @@
     padding: 10px 26px 16px 10px;
     margin-top: -25px;
     font-family: 'PT Serif', serif;
+    text-decoration: none;
 }
 .nav1-1{
     display: flex;
     justify-content: space-around;
     font-size: 18px;
+    text-decoration: none;
 }
 .nav1-2{
     display: flex;
     justify-content: space-around;
     font-size: 18px;
+    text-decoration: none;
 }
 .n-address
 {
     width: 200px;
+    text-decoration: none;
 }
 .n-time
 {
@@ -27,12 +31,14 @@
     flex-direction: column;
     width: 220px;
     text-align: center;
+    text-decoration: none;
 }
 
 .n-logo{
     width: 100px;
     align-items: center;
     text-align: center;
+    text-decoration: none;
 }
 .logoo{
     margin-left: -30px;
@@ -44,10 +50,12 @@
     display: flex;
     flex-direction: column;
     width: 200px;
+    text-decoration: none;
 }
 
 .n-support2{
     color:  #1183d5;
+    text-decoration: none;
 }
 .login-signup-btn{
     background-image: linear-gradient(to right,aqua  0%,#1183d5 51%,   aqua  100%);
@@ -81,10 +89,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;   
+    align-items: center;  
+    text-decoration: none; 
 }
 .nav2 a{
     margin: 0px 20px;
+    text-decoration: none;
 }
 .nav2 a:hover{
     width: 90px;
@@ -97,6 +107,7 @@
     text-align: center;
     transform: scale(1.1);
     transition: 0.5s;
+    text-decoration: none;
     
 }
 
@@ -152,7 +163,7 @@ body {
     color: black;
 }
 .home-display{
-    background-image: url(./img/home-img/hotel5.jpg);
+    background-image: url(./../img/home-img/hotel5.jpg);
     background-size: cover;
     background-blend-mode: darken;
     min-height: 720px;
@@ -206,8 +217,8 @@ body {
     display: block;
     border: #eee;
     position: relative;
-    top: -50px;
-    left: -620px;
+    top: -20px;
+    left: -920px;
     z-index: 5;
 }
 
@@ -266,17 +277,20 @@ body {
 .gallery-box{
     width: 70%;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     overflow: hidden;
     overflow-x: scroll;
 }
 .gallery-box::-webkit-scrollbar{
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 .feedback-img{
     width: 335px;
     height: 250px;
     margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .feedback-img:hover{
     transition: 0.5s;
