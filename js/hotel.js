@@ -1,5 +1,5 @@
 
-  confirm(" are you sure")
+  
 function submitForm() {
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
@@ -70,3 +70,4 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+// booking js
