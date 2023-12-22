@@ -9,7 +9,6 @@ a {
   cursor: pointer;
   color: black;
   font-size: 20px;
-
 }
 
 .heading {
@@ -134,7 +133,6 @@ p {
   color: white;
   text-decoration: none;
 }
-
 
 .nav2 {
   background-color: #34a1ef;
@@ -322,6 +320,7 @@ p {
   font-size: 16px;
   margin-top: 15px;
 }
+
 /* booking form */
 .booking-form {
   max-width: 600px;
@@ -333,7 +332,9 @@ p {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-input, select, button {
+input,
+select,
+button {
   margin-bottom: 15px;
   border-radius: 5px;
   padding: 10px;
@@ -514,7 +515,7 @@ button:hover {
 }
 
 /* footer */
-.footer{
+.footer {
   color: white;
   margin-top: 150px;
   width: 100%;
@@ -524,9 +525,10 @@ button:hover {
   padding: 20px;
   box-sizing: border-box;
 }
-.subscribe{
-  width: 75%;  
-  background-color:white;   
+
+.subscribe {
+  width: 75%;
+  background-color: white;
   border: 2px solid grey;
   padding: 15px 10px;
   display: flex;
@@ -537,20 +539,22 @@ button:hover {
   top: -30px;
   left: 12%;
   color: black;
-  box-shadow: 0px 0px 5px ;
+  box-shadow: 0px 0px 5px;
 }
-.subscribe input{
+
+.subscribe input {
   width: 300px;
   height: 35px;
 }
-.subs-btn{
-  background-image: linear-gradient(to right,aqua  0%,#1183d5 51%,   aqua  100%);
+
+.subs-btn {
+  background-image: linear-gradient(to right, aqua 0%, #1183d5 51%, aqua 100%);
   margin-left: 30px;
   padding: 15px 35px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;
-  background-size: 200% auto;           
+  background-size: 200% auto;
   box-shadow: 0 0 5px #494747;
   border-radius: 23px;
   color: white;
@@ -558,66 +562,77 @@ button:hover {
   border: #eee;
 }
 
-.subs-btn:hover{
+.subs-btn:hover {
   background-position: right center;
-  background-image: linear-gradient(to right, #fc00ff 0%, #00dbde  51%, #1183d5  100%);
+  background-image: linear-gradient(to right, #fc00ff 0%, #00dbde 51%, #1183d5 100%);
   color: white;
   text-decoration: none;
 }
 
-.subscribe span{
+.subscribe span {
   font-size: 20px;
   font-weight: bold;
 
 }
-.foot{
+
+.foot {
   position: absolute;
   top: 50px;
-  width: 100%;   
+  width: 100%;
   display: flex;
   justify-content: space-around;
 }
-.foot p{
+
+.foot p {
   font-size: 17px;
 }
-.foot h3{
+
+.foot h3 {
   /* color: black; */
   font-size: 20px;
 }
-.histoty{
+
+.histoty {
   width: 40%;
 }
-.social-media{
+
+.social-media {
   display: flex;
 }
-.social-media img{
+
+.social-media img {
   width: 30px;
   margin: 0 10px;
 }
-.contact{
+
+.contact {
   width: 20%;
-} 
-.contact img{
+}
+
+.contact img {
   width: 30px;
 }
 
-.feedback-form{
+.feedback-form {
   width: 220px;
   float: right;
   margin-right: 20px;
-} 
-.feedback-form img{
+}
+
+.feedback-form img {
   display: inline-block;
   float: left;
   margin: 5px;
   width: 30px;
 }
-.feedback-form input{
+
+.feedback-form input {
   width: 220px;
   padding: 10px;
   border-radius: 10px;
 }
-.copy{
+
+.copy {
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -626,6 +641,7 @@ button:hover {
   color: white;
   text-align: center;
 }
+
 /* booking form */
 
 
