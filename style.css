@@ -634,14 +634,14 @@ p{
 
 /* =======================media query 1200======================== */
 
-@media screen and (max-width: 1200px)
+@media screen and (max-width: 300px)
 {
     body{
         background-color: pink;
     }
     .home-container{
         padding-top: 20px;
-        width: 1060px;
+        /* width: 1060px; */
       }
 
       .nav1{
@@ -836,7 +836,7 @@ p{
 
 /* =======================media query 900======================== */
 
-@media screen and (max-width: 900px)
+@media screen and (max-width: 400px)
 {
     body{
         background-color: pink;
@@ -911,7 +911,7 @@ p{
 /* =======================media query 600======================== */
 
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 300px)
 {
     body{
         background-color: pink;
@@ -972,7 +972,7 @@ p{
 /* =======================media query 470======================== */
 
 
-@media screen and (max-width: 470px)
+@media screen and (max-width: 300px)
 {
     body{
         /* background-color: red; */
